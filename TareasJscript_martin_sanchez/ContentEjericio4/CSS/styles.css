@@ -1,0 +1,32 @@
+:root {
+  --primary: #0094ff;
+  --secondary: #b200ff; }
+
+:root {
+  --primary: #0094ff;
+  --secondary: #b200ff; }
+
+body h1 {
+  color: #0094ff; }
+body p {
+  color: #b200ff; }
+body button.btn_primary {
+  background: #0094ff;
+  width: 5rem;
+  border: none;
+  font-family: 'monospace', 'arial';
+  color: #ffffff;
+  cursor: pointer; }
+  body button.btn_primary:hover {
+    background: #0076cc; }
+body button.btn_secondary {
+  background: #b200ff;
+  width: 5rem;
+  border: none;
+  font-family: 'monospace', 'arial';
+  color: #ffffff;
+  cursor: pointer; }
+  body button.btn_secondary:hover {
+    background: #8e00cc; }
+
+/*# sourceMappingURL=styles.css.map */

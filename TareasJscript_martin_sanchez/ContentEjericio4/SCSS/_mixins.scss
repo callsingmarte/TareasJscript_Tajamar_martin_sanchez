@@ -1,0 +1,14 @@
+﻿@import "variables";
+
+@mixin button-bg($bg) {
+    background: $bg;
+    width: 5rem;
+    border: none;
+    font-family: 'monospace', 'arial';
+    color: $white_color;
+    cursor: pointer;
+
+    &:hover {
+        background: darken($bg,10%);
+    }
+}

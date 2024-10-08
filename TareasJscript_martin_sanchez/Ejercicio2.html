@@ -1,0 +1,37 @@
+﻿<!--
+Escribir un script que simule el lanzamiento de dos dados. 
+Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados. 
+Sumar el resultado de lanzar dos dados y anotar en un array el resultado de dicha suma realizando 6 veces esta operación. 
+Ordenar el array de mayor a menor y mostrarlo.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let resultados = [];
+
+    for (let contador = 0; contador < 6; contador++) {
+        let dado1 = lanzamientoDado();
+        let dado2 = lanzamientoDado();
+
+        let sumaDados = dado1 + dado2;
+        resultados.push(sumaDados);
+    }
+
+    resultados.sort((a, b) => a < b);
+    console.log("resultados dados", resultados); 
+
+    function lanzamientoDado() {
+        return Math.floor(Math.random() * 6) + 1
+    }
+
+</script>

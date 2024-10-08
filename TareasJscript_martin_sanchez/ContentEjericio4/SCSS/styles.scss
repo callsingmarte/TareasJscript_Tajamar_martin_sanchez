@@ -1,0 +1,22 @@
+﻿
+@import "variables";
+@import "mixins";
+
+body {
+    h1 {
+        color: $primary;
+    }
+
+    p {
+        color: $secondary;
+    }
+
+    button {
+        &.btn_primary {
+            @include button-bg($primary);
+        }
+        &.btn_secondary {
+            @include button-bg($secondary);
+        }
+    }
+}
